@@ -33,11 +33,12 @@ NOT_FOUND = 'N/A'
 
 from itertools import islice
 
+
 def get_every_nth_state(states=states, n=10):
     """Return a list with every nth item (default argument n=10, so every
        10th item) of the states list above (remember: lists keep order)"""
     if n >= 1:
-        return states[n-1]
+        return [state for i, state in enumerate(states) if (i+1) % 10 == 0]
     else:
         return 'Enter a valid item No.'
 
@@ -48,7 +49,7 @@ def get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev):
        'Illinois' returns 'IL'.
        If the state is not in the dict, return 'N/A' which we stored
        in the NOT_FOUND constant (takeaway: dicts are great for lookups)"""
-    return us_state_abbrev.get(state_name)
+    return us_state_abbrev.get(state_name, NOT_FOUND)
 
 
 def get_longest_state(data):
@@ -74,6 +75,6 @@ def combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
 
 if __name__ == '__main__':
     print(get_every_nth_state(n=11))
-    print(get_state_abbrev('Alabama'))
+    print(get_state_abbrev('Agra'))
     print(get_longest_state(states))
     print(combine_state_names_and_abbreviations())
