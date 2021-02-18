@@ -4,5 +4,5 @@
 name = 'Python'
 
 
-def Hello(name=name):
-    return f'Hello {name}, howdy!'
+def Hello(_name=name):
+    return f'Hello {_name}, howdy!'
