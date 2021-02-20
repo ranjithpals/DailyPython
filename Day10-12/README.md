@@ -10,6 +10,6 @@ https://kirankoduru.github.io/python/mocking-with-python-part-1.html
 
 https://kirankoduru.github.io/python/mocking-with-python-part-2.html
 
-# Example of Mock and Patching for usage of Builtin functions for the same output used needed everytime or (different) return values for the same built-in function called multiple times.
+# Mock and Patching of Builtin functions for consistent output or different return values when called multiple times.
 
 https://andressa.dev/2019-07-20-using-pach-to-test-inputs/
