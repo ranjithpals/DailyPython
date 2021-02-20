@@ -1,4 +1,4 @@
-# Good read on Decoraters and Properties in Python
+## Good read on Decoraters and Properties in Python
 
 https://www.programiz.com/python-programming/property
 
